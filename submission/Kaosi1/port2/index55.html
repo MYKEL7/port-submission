@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UR-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://kit.fontawesome.com/d1fb254ac6.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+ <div  id="header">
+    <div class="container">
+        <nav>
+            <img src="images/updated kaosi logo2 (2).png" class="logo"/>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer and Email Copywriter</p>
+            <h1>Hi, I'm Okwume<br><span>Kaosi</span> From Nigeria</h1>
+        </div>
+    </div>
+   <div class="pic"><img src="images/Snapchat-1993323978.jpg" class="pic1"/></div>
+</div>
+<!--About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+              <img src="images/aboutme.jpg"/>  
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Victor, a Frontend developer  looking to learn,
+                    relearn, collaborate, and deliver excellent products and
+                    services within an innovative, transparent, and efficient organization with inclusive values.
+                    I am motivated by results and the desire to meet a deadline,
+                    very particular about writing clean and standard code quality.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-link" onclick="opentab('education')">Education</p>
+                </div>
+               <!--Skills--> <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Webiste Development</span><br/>User Experience Design</li>
+                        <li><span>Frontend Development</span><br/>Designing Web Interfaces</li>
+                        <li><span>Inbox Marketing</span><br/>Write Campaigns, Flows,and Newsletters </li>
+                    </ul>
+                </div>
+                <!--Experience--><div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br/>6 months Website Development Training at UBC institute</li>
+                        <li><span>2023 - Current</span><br/>Internship at -----</li>
+                        <li><span>2023 - Current</span><br/>6 months Email Copywriting Training at IM Academy</li>
+                    </ul>
+                </div>
+              <!--Education-->  <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>2017 - 2018</span><br/>Murtala Muhammed Secondary School</li>
+                        <li><span>2018 - 2022</span><br/>Maryland Comprehensive Secondary School</li>
+                        <li><span>2022 - 2023</span><br/>Aaresther Divine Secondary School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Services---------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I can create good Web Designs filled with mind blowing animations.<br/>
+                    I can also create Webistes according to your brand and taste with high quality graphics
+                    and images.<br/> I also make sure I write standard quality code so that you can easily read it.
+                    I'm available to build any category of websites.<br/>
+                    So don't hesitate to contact me, click on my contact info and let's do business.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h2>Email Copwriting</h2>
+                <p>
+                I write good quality emails which is free of any grammatical error,<br/>
+                I also make sure they are easy to read and complex languages are'nt applied so that the<br/>
+                less literate people can read and understand, I add creativity and passion when writing these emails.
+                My emails are capable of boosting companies profit revenue by a mile, trust me.
+                So don't hesitate to reach out to me through my contact info.  
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-------------Projects-------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+           <div class="work">
+            <img src="images/work-1.png"/> 
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to talented people around the world
+                    Download it from Play store.
+                </p>
+                <a href="#"></a>
+            </div>
+            </div>
+        <div class="work">
+            <img src="images/work-2.png"/>
+        </div>
+        <div class="work">
+            <img src="images/work-3.png"/>
+        </div>
+           
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-link");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</body>
+
+
+
+
+</html>
